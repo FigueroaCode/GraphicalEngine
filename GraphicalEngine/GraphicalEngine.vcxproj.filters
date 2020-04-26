@@ -87,6 +87,9 @@
     <ClCompile Include="src\Vertex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\test_interface\TestGraphing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\headers\Renderer.h">
@@ -893,6 +896,9 @@
     <ClInclude Include="src\headers\Vertex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\test_interface\TestGraphing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\shaders\basic.shader" />
@@ -1299,5 +1305,6 @@
       <Filter>Header Files</Filter>
     </None>
     <None Include="resources\shaders\cube.shader" />
+    <None Include="resources\shaders\line.shader" />
   </ItemGroup>
 </Project>

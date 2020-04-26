@@ -158,6 +158,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\test_interface\TestGraphing.cpp" />
     <ClCompile Include="src\test_interface\TestMenu.cpp" />
     <ClCompile Include="src\test_interface\TestRotation.cpp" />
     <ClCompile Include="src\test_interface\TestTexture2D.cpp" />
@@ -189,6 +190,7 @@
     <ClInclude Include="src\headers\VertexBuffer.h" />
     <ClInclude Include="src\headers\VertexBufferLayout.h" />
     <ClInclude Include="src\headers\GLWindow.h" />
+    <ClInclude Include="src\test_interface\TestGraphing.h" />
     <ClInclude Include="src\test_interface\TestInterface.h" />
     <ClInclude Include="src\test_interface\TestRotation.h" />
     <ClInclude Include="src\test_interface\TestTexture2D.h" />
@@ -450,6 +452,7 @@
   <ItemGroup>
     <None Include="resources\shaders\basic.shader" />
     <None Include="resources\shaders\cube.shader" />
+    <None Include="resources\shaders\line.shader" />
     <None Include="src\vendor\glm\detail\func_common.inl" />
     <None Include="src\vendor\glm\detail\func_common_simd.inl" />
     <None Include="src\vendor\glm\detail\func_exponential.inl" />

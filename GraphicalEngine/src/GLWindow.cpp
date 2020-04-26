@@ -5,6 +5,7 @@
 #include "test_interface/TestClearColor.h"
 #include "test_interface/TestTexture2D.h"
 #include "test_interface/TestRotation.h"
+#include "test_interface/TestGraphing.h"
 
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
@@ -44,13 +45,14 @@ GLWindow::GLWindow(float width, float height)
     //io.Fonts->AddFontDefault();
 
     // Create Tests
-    test::TestInterface* curTest = new test::TestRotation();
+    test::TestInterface* curTest = new test::TestGraphing();
     test::TestMenu* testMenu = new test::TestMenu(curTest);
     //curTest = testMenu;
 
     testMenu->registerTest<test::TestClearColor>("Clear Color");
     testMenu->registerTest<test::TestTexture2D>("Texture 2D");
     testMenu->registerTest<test::TestRotation>("Rotations");
+    testMenu->registerTest<test::TestGraphing>("Graphing");
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
