@@ -6,6 +6,9 @@
 #include "test_interface/TestTexture2D.h"
 #include "test_interface/TestRotation.h"
 #include "test_interface/TestGraphing.h"
+#include "test_interface/TestTextureGraph.h"
+#include "test_interface/TestAxisGraph.h"
+#include "test_interface/Test3DGraph.h"
 
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
@@ -45,7 +48,7 @@ GLWindow::GLWindow(float width, float height)
     //io.Fonts->AddFontDefault();
 
     // Create Tests
-    test::TestInterface* curTest = new test::TestGraphing();
+    test::TestInterface* curTest = new test::Test3DGraph();
     test::TestMenu* testMenu = new test::TestMenu(curTest);
     //curTest = testMenu;
 
@@ -53,6 +56,9 @@ GLWindow::GLWindow(float width, float height)
     testMenu->registerTest<test::TestTexture2D>("Texture 2D");
     testMenu->registerTest<test::TestRotation>("Rotations");
     testMenu->registerTest<test::TestGraphing>("Graphing");
+    testMenu->registerTest<test::TestTextureGraph>("Texture Graphing");
+    testMenu->registerTest<test::TestAxisGraph>("Axis Graph");
+    testMenu->registerTest<test::Test3DGraph>("3D Graph");
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -80,9 +86,9 @@ GLWindow::GLWindow(float width, float height)
 
         // ImGui Rendering
         ImGui::Render();
-        int display_w, display_h;
-        glfwGetFramebufferSize(window, &display_w, &display_h);
-        glViewport(0, 0, display_w, display_h);
+        //int display_w, display_h;
+        //glfwGetFramebufferSize(window, &display_w, &display_h);
+        //glViewport(0, 0, display_w, display_h);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
         /* Swap front and back buffers */

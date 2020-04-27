@@ -90,6 +90,15 @@
     <ClCompile Include="src\test_interface\TestGraphing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\test_interface\TestTextureGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_interface\TestAxisGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_interface\Test3DGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\headers\Renderer.h">
@@ -899,6 +908,15 @@
     <ClInclude Include="src\test_interface\TestGraphing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\test_interface\TestTextureGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_interface\TestAxisGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test_interface\Test3DGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\shaders\basic.shader" />
@@ -1306,5 +1324,8 @@
     </None>
     <None Include="resources\shaders\cube.shader" />
     <None Include="resources\shaders\line.shader" />
+    <None Include="resources\shaders\Graph.shader" />
+    <None Include="resources\shaders\axis.shader" />
+    <None Include="resources\shaders\graph3d.shader" />
   </ItemGroup>
 </Project>

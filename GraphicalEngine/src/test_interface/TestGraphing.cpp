@@ -16,8 +16,6 @@ namespace test {
 		 scale_x(1) {
 		GLCheckError(glEnable(GL_BLEND));
 		GLCheckError(glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA));
-		//GLCheckError(glEnable(GL_POINT_SPRITE));
-		//GLCheckError(glEnable(GL_VERTEX_PROGRAM_POINT_SIZE));
 
 		for (int i = 0; i < POINT_COUNT; i++) {
 			float x = (i - 1000.0f) / 100.0f;

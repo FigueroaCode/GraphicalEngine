@@ -158,10 +158,13 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\test_interface\Test3DGraph.cpp" />
+    <ClCompile Include="src\test_interface\TestAxisGraph.cpp" />
     <ClCompile Include="src\test_interface\TestGraphing.cpp" />
     <ClCompile Include="src\test_interface\TestMenu.cpp" />
     <ClCompile Include="src\test_interface\TestRotation.cpp" />
     <ClCompile Include="src\test_interface\TestTexture2D.cpp" />
+    <ClCompile Include="src\test_interface\TestTextureGraph.cpp" />
     <ClCompile Include="src\Texture.cpp" />
     <ClCompile Include="src\vendor\glm\detail\glm.cpp" />
     <ClCompile Include="src\vendor\imgui\imgui.cpp" />
@@ -190,10 +193,13 @@
     <ClInclude Include="src\headers\VertexBuffer.h" />
     <ClInclude Include="src\headers\VertexBufferLayout.h" />
     <ClInclude Include="src\headers\GLWindow.h" />
+    <ClInclude Include="src\test_interface\Test3DGraph.h" />
+    <ClInclude Include="src\test_interface\TestAxisGraph.h" />
     <ClInclude Include="src\test_interface\TestGraphing.h" />
     <ClInclude Include="src\test_interface\TestInterface.h" />
     <ClInclude Include="src\test_interface\TestRotation.h" />
     <ClInclude Include="src\test_interface\TestTexture2D.h" />
+    <ClInclude Include="src\test_interface\TestTextureGraph.h" />
     <ClInclude Include="src\vendor\glm\common.hpp" />
     <ClInclude Include="src\vendor\glm\detail\compute_common.hpp" />
     <ClInclude Include="src\vendor\glm\detail\compute_vector_relational.hpp" />
@@ -450,8 +456,11 @@
     <ClInclude Include="src\test_interface\TestClearColor.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\shaders\axis.shader" />
     <None Include="resources\shaders\basic.shader" />
     <None Include="resources\shaders\cube.shader" />
+    <None Include="resources\shaders\Graph.shader" />
+    <None Include="resources\shaders\graph3d.shader" />
     <None Include="resources\shaders\line.shader" />
     <None Include="src\vendor\glm\detail\func_common.inl" />
     <None Include="src\vendor\glm\detail\func_common_simd.inl" />
